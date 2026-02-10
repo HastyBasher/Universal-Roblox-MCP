@@ -32,7 +32,7 @@ if exist "packages\server\dist\index.js" (
     echo.
     echo Add this to your MCP client config:
     echo   "command": "node"
-    echo   "args": ["c:\\Users\\warcr\\.cursor\\roblox-mcps\\roblox-unified-mcp\\packages\\server\\dist\\index.js"]
+    echo   "args": ["C:\\Path\\To\\Universal-Roblox-MCP\\packages\\server\\dist\\index.js"]
 ) else (
     echo ERROR: Build output not found
     pause

@@ -54,7 +54,7 @@ Choose your AI assistant:
 **For Claude Code:**
 ```bash
 # After building the project, configure with the local path
-claude mcp add roblox "node" "c:\\Users\\warcr\\.cursor\\roblox-mcps\\roblox-mcp\\packages\\server\\dist\\index.js"
+claude mcp add roblox "node" "C:\Path\To\Universal-Roblox-MCP\packages\server\dist\index.js"
 ```
 
 **For Claude Desktop/Others:**
@@ -63,7 +63,7 @@ claude mcp add roblox "node" "c:\\Users\\warcr\\.cursor\\roblox-mcps\\roblox-mcp
   "mcpServers": {
     "roblox": {
       "command": "node",
-      "args": ["c:\\Users\\warcr\\.cursor\\roblox-mcps\\roblox-mcp\\packages\\server\\dist\\index.js"]
+      "args": ["C:\\Path\\To\\Universal-Roblox-MCP\\packages\\server\\dist\\index.js"]
     }
   }
 }
@@ -78,7 +78,7 @@ If you encounter issues, you may need to run it through `cmd`. Update your confi
   "mcpServers": {
     "roblox": {
       "command": "cmd",
-      "args": ["/c", "node", "c:\\Users\\warcr\\.cursor\\roblox-mcps\\roblox-unified-mcp\\packages\\server\\dist\\index.js"]
+      "args": ["/c", "node", "C:\\Path\\To\\Universal-Roblox-MCP\\packages\\server\\dist\\index.js"]
     }
   }
 }
