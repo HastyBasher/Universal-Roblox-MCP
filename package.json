@@ -1,0 +1,45 @@
+{
+  "name": "roblox-mcp",
+  "version": "1.0.0",
+  "description": "Roblox MCP Server - Comprehensive MCP integration for Roblox Studio development",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r --filter './packages/**' build",
+    "build:core": "pnpm --filter @roblox-mcp/core build",
+    "build:studio-bridge": "pnpm --filter @roblox-mcp/studio-bridge build",
+    "build:tools-studio": "pnpm --filter @roblox-mcp/tools-studio build",
+    "build:tools-docs": "pnpm --filter @roblox-mcp/tools-docs build",
+    "build:server": "pnpm --filter @roblox-mcp/server build",
+    "dev": "pnpm --filter @roblox-mcp/server dev",
+    "start": "pnpm --filter @roblox-mcp/server start",
+    "lint": "pnpm -r --filter './packages/**' lint",
+    "typecheck": "pnpm -r --filter './packages/**' typecheck",
+    "test": "pnpm -r --filter './packages/**' test",
+    "clean": "pnpm -r --filter './packages/**' clean",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "keywords": [
+    "mcp",
+    "roblox",
+    "studio",
+    "ai",
+    "model-context-protocol",
+    "game-development",
+    "monorepo"
+  ],
+  "author": "Roblox MCP Contributors",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

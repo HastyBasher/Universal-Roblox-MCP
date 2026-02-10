@@ -1,0 +1,10 @@
+{
+  "Name": "Roblox MCP Plugin",
+  "Description": "AI tool access to Roblox Studio - comprehensive MCP integration for Roblox development",
+  "Author": "Roblox MCP",
+  "Version": "1.0.0",
+  "Id": "roblox-mcp-plugin",
+  "Permissions": [
+    "HTTP"
+  ]
+}

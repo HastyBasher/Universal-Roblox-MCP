@@ -1,0 +1,66 @@
+{
+  "name": "@roblox-mcp/tools-studio",
+  "version": "1.0.0",
+  "description": "Studio interaction tools for Roblox MCP",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./instance": {
+      "types": "./dist/instance/index.d.ts",
+      "import": "./dist/instance/index.js"
+    },
+    "./properties": {
+      "types": "./dist/properties/index.d.ts",
+      "import": "./dist/properties/index.js"
+    },
+    "./scripts": {
+      "types": "./dist/scripts/index.d.ts",
+      "import": "./dist/scripts/index.js"
+    },
+    "./attributes": {
+      "types": "./dist/attributes/index.d.ts",
+      "import": "./dist/attributes/index.js"
+    },
+    "./tags": {
+      "types": "./dist/tags/index.d.ts",
+      "import": "./dist/tags/index.js"
+    },
+    "./mass-operations": {
+      "types": "./dist/mass-operations/index.d.ts",
+      "import": "./dist/mass-operations/index.js"
+    }
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/**/*.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "mcp",
+    "roblox",
+    "studio",
+    "tools"
+  ],
+  "author": "Roblox MCP Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "@roblox-mcp/core": "workspace:*",
+    "@roblox-mcp/studio-bridge": "workspace:*",
+    "@modelcontextprotocol/sdk": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.2"
+  }
+}
