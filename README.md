@@ -1,6 +1,6 @@
-# Roblox MCP Server
+# Universal Roblox MCP
 
-**Comprehensive MCP integration for Roblox Studio development** - A powerful MCP server for Roblox Studio with 60+ tools, 30+ prompts, and 4+ resources.
+**Comprehensive MCP integration for Roblox Studio development** — 60+ tools, 30+ prompts, and 4+ resources so AI assistants (Claude, Cursor, Windsurf) can read/write Roblox Studio and use the Roblox API.
 
 ## Features
 
@@ -15,7 +15,8 @@
 ### 1. Install the Server
 
 ```bash
-cd c:\Users\warcr\.cursor\roblox-mcps\roblox-mcp
+git clone https://github.com/HastyBasher/Universal-Roblox-MCP.git
+cd Universal-Roblox-MCP
 pnpm install
 pnpm build
 ```
@@ -37,7 +38,7 @@ Or install via Roblox Creator Store: https://create.roblox.com/store/asset/13298
   "mcpServers": {
     "roblox": {
       "command": "node",
-      "args": ["c:\\Users\\warcr\\.cursor\\roblox-mcps\\roblox-mcp\\packages\\server\\dist\\index.js"]
+      "args": ["/path/to/Universal-Roblox-MCP/packages/server/dist/index.js"]
     }
   }
 }
@@ -49,11 +50,12 @@ Or install via Roblox Creator Store: https://create.roblox.com/store/asset/13298
   "mcpServers": {
     "roblox": {
       "command": "node",
-      "args": ["c:\\Users\\warcr\\.cursor\\roblox-mcps\\roblox-mcp\\packages\\server\\dist\\index.js"]
+      "args": ["/path/to/Universal-Roblox-MCP/packages/server/dist/index.js"]
     }
   }
 }
 ```
+Replace `/path/to/Universal-Roblox-MCP` with your clone path (e.g. `C:\\Users\\You\\Universal-Roblox-MCP` on Windows).
 
 ## Usage
 
@@ -93,7 +95,7 @@ Or install via Roblox Creator Store: https://create.roblox.com/store/asset/13298
 ## Architecture
 
 ```
-roblox-mcp/
+Universal-Roblox-MCP/
 ├── packages/
 │   ├── core/              # Core MCP framework
 │   ├── studio-bridge/     # Studio connection (HTTP)
